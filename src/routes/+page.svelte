@@ -1,5 +1,5 @@
 <script>
-	import TypingText from "$lib/components/TypingText.svelte";
+	import Landing from '$lib/sections/Landing.svelte';
 </script>
 
 <svelte:head>
@@ -7,9 +7,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex justify-center items-center">
-	<TypingText texts={["Kurec", "Za", "Marto"]}/>
-</section>
+<Landing />
 
 <style>
 </style>
