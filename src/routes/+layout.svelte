@@ -11,11 +11,11 @@
 </script>
 
 <div class="flex flex-col items-center min-h-screen">
-	<div class="flex justify-center w-full max-w-[64rem] rounded-b-md">
+	<div class="flex justify-center w-full max-w-[64rem] rounded-b-md fixed top-0">
 		<Navbar />
 	</div>
 
-	<main>
+	<main class='min-h-screen pt-16'>
 		<slot />
 	</main>
 </div>
@@ -25,7 +25,8 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;

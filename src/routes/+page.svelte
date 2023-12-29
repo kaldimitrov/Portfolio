@@ -7,7 +7,6 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Landing />
-
-<style>
-</style>
+<section id='about' class='h-screen'>
+	<Landing />
+</section>

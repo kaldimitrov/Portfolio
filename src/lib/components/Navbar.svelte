@@ -2,7 +2,7 @@
 	import ThemeSwitcher from '$lib/theme/ThemeSwitcher.svelte';
 </script>
 
-<div class="navbar bg-base-200 w-full rounded-b-2xl">
+<div class="navbar bg-base-300 w-full rounded-b-2xl">
 	<div class="w-1/2 md:w-1/3 justify-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost md:hidden">
@@ -10,7 +10,7 @@
 					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg
 				>
 			</div>
-			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-64">
 				<li><a href="#about">About</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#projects">Projects</a></li>
