@@ -1,4 +1,5 @@
 <script>
+	import Contact from '$lib/sections/Contact.svelte';
 	import Landing from '$lib/sections/Landing.svelte';
 </script>
 
@@ -7,6 +8,9 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section id='about' class='h-screen'>
+<section id="about" class="h-screen">
 	<Landing />
+</section>
+<section id="contact" class="h-screen">
+	<Contact />
 </section>

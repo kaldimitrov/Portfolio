@@ -15,5 +15,11 @@ export default {
 		prefix: '',
 		logs: true,
 		themeRoot: ':root'
-	}
+	},
+	safelist: [
+		'alert-success',
+		'alert-error',
+		'alert-warning',
+		'alert-info',
+	]
 };
