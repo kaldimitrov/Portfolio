@@ -10,9 +10,9 @@
 					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg
 				>
 			</div>
-			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-64">
+			<ul class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-64">
 				<li><a href="#about">About</a></li>
-				<li><a href="#experience">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -24,7 +24,7 @@
 		<div class="hidden md:flex">
 			<ul class="menu menu-horizontal px-1">
 				<li><a class="hover:text-primary" href="#about">About</a></li>
-				<li><a class="hover:text-primary" href="#experience">Experience</a></li>
+				<li><a class="hover:text-primary" href="#skills">Skills</a></li>
 				<li><a class="hover:text-primary" href="#projects">Projects</a></li>
 				<li><a class="hover:text-primary" href="#contact">Contact</a></li>
 			</ul>

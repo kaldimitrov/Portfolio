@@ -7,7 +7,7 @@ export default {
 	plugins: [require('daisyui')],
 	darkMode: 'class',
 	daisyui: {
-		themes: ['night', 'light'],
+		themes: ['night', 'emerald'],
 		darkTheme: 'night',
 		base: true,
 		styled: true,
@@ -16,10 +16,5 @@ export default {
 		logs: true,
 		themeRoot: ':root'
 	},
-	safelist: [
-		'alert-success',
-		'alert-error',
-		'alert-warning',
-		'alert-info',
-	]
+	safelist: ['alert-success', 'alert-error', 'alert-warning', 'alert-info']
 };
