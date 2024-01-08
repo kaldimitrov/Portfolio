@@ -13,18 +13,15 @@
 		message: ''
 	};
 
-	const sendEmail = async (e: any) => {
+	const sendEmail = async (e: Event) => {
 		e.preventDefault();
 		try {
 			await emailjs.send(CONFIG.email.serviceId, CONFIG.email.templateId, form, CONFIG.email.userId);
 			pushNotification('Email sent successfully!', AlertLevels.SUCCESS);
+			form = { user_email: '', from_name: '', subject: '', message: '' };
 		} catch (error) {
 			pushNotification('Email failed to send!', AlertLevels.ERROR);
 		}
-		form.from_name = '';
-		form.user_email = '';
-		form.subject = '';
-		form.message = '';
 	};
 </script>
 
@@ -54,7 +51,7 @@
 		<div class="w-full px-3 mb-6">
 			<label class="block uppercase tracking-wide text-xs font-bold mb-2" for="grid-subject"> Subject </label>
 			<input
-				class="block w-full bg-neutral-content border rounded py-3 px-4 leading-tight focus:out		line-none focus:bg-white focus:border-gray-500 text-neutral"
+				class="block w-full bg-neutral-content border rounded py-3 px-4 leading-tight focus:out line-none focus:bg-white focus:border-gray-500 text-neutral"
 				id="grid-subject"
 				type="text"
 				placeholder="Enter subject"

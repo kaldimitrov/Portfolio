@@ -6,19 +6,27 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>KDimitrov Portfolio</title>
+	<meta name="description" content="Portfolio" />
 </svelte:head>
 
-<section id="about" class="h-screen mx-auto">
-	<Landing />
-</section>
-<section id="skills" class="h-screen min-h-full mx-auto">
-	<Skills />
-</section>
-<section id="projects" class="h-screen min-h-full mx-auto">
-	<Projects />
-</section>
-<section id="contact" class="h-screen min-h-full mx-auto">
-	<Contact />
-</section>
+<div class="section-containers">
+	<section id="about">
+		<Landing />
+	</section>
+	<section id="skills">
+		<Skills />
+	</section>
+	<section id="projects">
+		<Projects />
+	</section>
+	<section id="contact">
+		<Contact />
+	</section>
+</div>
+
+<style>
+	.section-containers > section {
+		@apply h-screen min-h-full mx-auto;
+	}
+</style>

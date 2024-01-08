@@ -14,22 +14,10 @@
 
 <div class="flex flex-col items-center min-h-screen">
 	<Notification />
-
-	<div class="flex justify-center w-full max-w-[64rem] rounded-b-md fixed top-0 z-40">
+	<div class="fixed top-0 z-40 flex justify-center w-full max-w-[64rem] rounded-b-md">
 		<Navbar />
 	</div>
-
-	<main class="min-h-screen flex flex-col pt-16 px-4 py-0">
+	<main class="mx-auto w-full max-w-[64rem] box-border flex flex-col pt-16 px-4">
 		<slot />
 	</main>
 </div>
-
-<style>
-	main {
-		flex: 1;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
