@@ -6,11 +6,22 @@
 
 <div class="min-h-full max-w-96 md:max-w-full py-4 flex flex-col items-center justify-center">
 	<h1 class="text-4xl font-bold mb-8">Projects</h1>
-	<Splide options={{ autoplay: true, speed: 1000, drag: 'free', snap: true, interval: 1000 }} class='max-w-full'>
+	<Splide
+		options={{
+			autoplay: true,
+			speed: 1000,
+			drag: 'free',
+			snap: true,
+			interval: 1000,
+			rewind: true,
+			rewindByDrag: true
+			}}
+		class="max-w-full"
+	>
 		{#each projects as project}
 			<SplideSlide>
 				<div class="card bg-base-200">
-					<img class='max-w-full' src={project.image} alt="Project img" />
+					<img class="max-w-full" src={project.image} alt="Project img" />
 					<div class="card-body">
 						<h2 class="card-title">{project.name}</h2>
 						<p>{project.description}</p>

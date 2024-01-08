@@ -13,9 +13,9 @@
 <section id="about" class="h-screen mx-auto">
 	<Landing />
 </section>
-<!-- <section id="skills" class="h-screen">
+<section id="skills" class="h-screen min-h-full mx-auto">
 	<Skills />
-</section> -->
+</section>
 <section id="projects" class="h-screen min-h-full mx-auto">
 	<Projects />
 </section>
