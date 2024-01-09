@@ -1,14 +1,15 @@
 export const projects = [
 	{
 		name: 'Portfolio',
-		description: 'My personal developer portfolio website',
-		image: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
+		description: 'My personal developer portfolio website, built using Svelte, TailwindCSS, and DaisyUI.',
+		image: 'https://i.imgur.com/k9d4QcH.jpg',
 		tags: ['Svelte', 'TailwindCSS', 'DaisyUi'],
 		link: 'https://github.com/kaldimitrov/Portfolio'
 	},
 	{
 		name: 'TaskTracker',
-		description: 'A kanban styled task tracker & manager written using react',
+		description:
+			'A kanban styled task tracker & manager built using React, Redux, and Docker, and utilizing the local storage to persist data.',
 		image:
 			'https://camo.githubusercontent.com/b790f303961f46434267ade9e38873742a05defd5e887ee70ba0155d32457e81/68747470733a2f2f692e696d6775722e636f6d2f5645745338544f2e6a7067',
 		tags: ['React', 'Redux', 'Docker'],
