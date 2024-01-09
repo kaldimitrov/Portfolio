@@ -1,4 +1,4 @@
-export const projects = [
+export const Projects = [
 	{
 		name: 'Portfolio',
 		description: 'My personal developer portfolio website, built using Svelte, TailwindCSS, and DaisyUI.',
