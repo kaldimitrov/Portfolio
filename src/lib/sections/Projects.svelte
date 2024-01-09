@@ -19,7 +19,7 @@
 	<Splide options={splideOptions} class="max-w-full">
 		{#each Projects as project}
 			<SplideSlide class="flex items-center justify-center">
-				<div class="card bg-base-200 max-w-2xl">
+				<div class="card bg-base-200 max-w-2xl shadow-md">
 					<img src={project.image} alt="Project img" class=" w-full h-auto object-contain" />
 					<div class="card-body">
 						<h2 class="card-title">{project.name}</h2>
