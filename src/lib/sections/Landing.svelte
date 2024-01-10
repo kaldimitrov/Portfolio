@@ -30,7 +30,7 @@
 <section class="w-full min-h-[50%] max-w-full md:pt-12">
 	<h1 class="text-xl font-medium text-pretty inline">
 		I've been in the software engineering field for <TimerText
-			startTime={1113144807}
+			startTime={1568579400}
 			additionalClasses={'inline text-pretty text-xl font-medium bg-gradient-to-r bg-clip-text text-transparent from-primary to-accent'}
 		/>. My expertise lies in building robust and efficient system architectures and infrastructures. I take pride in my
 		ability to understand and solve complex backend challenges, ensuring the systems I work on are reliable and

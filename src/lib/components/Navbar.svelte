@@ -1,5 +1,6 @@
 <script>
 	import ThemeSwitcher from '$lib/theme/ThemeSwitcher.svelte';
+	import { setSectionIndex } from '$lib/globalStore';
 </script>
 
 <div class="navbar bg-base-100 w-full rounded-b-2xl shadow-2xl">
@@ -11,22 +12,22 @@
 				>
 			</div>
 			<ul class="menu menu-sm dropdown-content mt-3 p-2 bg-base-100 rounded-box w-64 shadow-2xl">
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about" on:click={() => setSectionIndex(1)}>About</a></li>
+				<li><a href="#skills" on:click={() => setSectionIndex(2)}>Skills</a></li>
+				<li><a href="#projects" on:click={() => setSectionIndex(3)}>Projects</a></li>
+				<li><a href="#contact" on:click={() => setSectionIndex(4)}>Contact</a></li>
 			</ul>
 		</div>
-		<a href="/" class="hidden md:flex btn btn-ghost text-3xl font-bold">KDimitrov</a>
+		<a href="/" on:click={() => setSectionIndex(1)} class="hidden md:flex btn btn-ghost text-3xl font-bold">KDimitrov</a>
 	</div>
-	<a href="/" class="md:hidden btn btn-ghost text-3xl font-bold">KDimitrov</a>
+	<a href="/" class="md:hidden btn btn-ghost text-3xl font-bold" on:click={() => setSectionIndex(1)}>KDimitrov</a>
 	<div class="w-1/2 md:w-2/3 justify-end">
 		<div class="hidden md:flex">
 			<ul class="menu menu-horizontal px-1">
-				<li><a class="hover:text-primary" href="#about">About</a></li>
-				<li><a class="hover:text-primary" href="#skills">Skills</a></li>
-				<li><a class="hover:text-primary" href="#projects">Projects</a></li>
-				<li><a class="hover:text-primary" href="#contact">Contact</a></li>
+				<li><a class="hover:text-primary" href="#about" on:click={() => setSectionIndex(1)}>About</a></li>
+				<li><a class="hover:text-primary" href="#skills" on:click={() => setSectionIndex(2)}>Skills</a></li>
+				<li><a class="hover:text-primary" href="#projects" on:click={() => setSectionIndex(3)}>Projects</a></li>
+				<li><a class="hover:text-primary" href="#contact" on:click={() => setSectionIndex(4)}>Contact</a></li>
 			</ul>
 		</div>
 		<ThemeSwitcher />

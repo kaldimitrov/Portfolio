@@ -4,10 +4,9 @@
 	import Landing from '$lib/sections/Landing.svelte';
 	import Projects from '$lib/sections/Projects.svelte';
 	import Skills from '$lib/sections/Skills.svelte';
+	import { sectionIndex, setSectionIndex } from '$lib/globalStore';
 
 	let sections: NodeListOf<Element>;
-	let isScrolling: boolean = false;
-	let currentSectionIndex = 0;
 
 	onMount(() => {
 		sections = document.querySelectorAll('.section-containers > section');
@@ -18,12 +17,12 @@
 		event.preventDefault();
 
 		const deltaY = event.deltaY;
-		if (deltaY > 0 && currentSectionIndex < sections.length - 1) {
-			currentSectionIndex++;
-			scrollToSection(currentSectionIndex);
-		} else if (currentSectionIndex > 0) {
-			currentSectionIndex--;
-			scrollToSection(currentSectionIndex);
+		if (deltaY > 0 && $sectionIndex < sections.length - 1) {
+			setSectionIndex($sectionIndex + 1);
+			scrollToSection($sectionIndex);
+		} else if ($sectionIndex > 0) {
+			setSectionIndex($sectionIndex - 1);
+			scrollToSection($sectionIndex);
 		}
 	}
 
