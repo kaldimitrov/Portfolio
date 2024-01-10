@@ -18,7 +18,8 @@
 				<li><a href="#contact" on:click={() => setSectionIndex(4)}>Contact</a></li>
 			</ul>
 		</div>
-		<a href="/" on:click={() => setSectionIndex(1)} class="hidden md:flex btn btn-ghost text-3xl font-bold">KDimitrov</a>
+		<a href="/" on:click={() => setSectionIndex(1)} class="hidden md:flex btn btn-ghost text-3xl font-bold">KDimitrov</a
+		>
 	</div>
 	<a href="/" class="md:hidden btn btn-ghost text-3xl font-bold" on:click={() => setSectionIndex(1)}>KDimitrov</a>
 	<div class="w-1/2 md:w-2/3 justify-end">
