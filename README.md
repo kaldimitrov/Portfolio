@@ -21,8 +21,8 @@ To get started with development mode, follow these steps:
 1. **Clone the Repository**: First, clone the repository to your local machine using Git:
 
    ```bash
-   git clone [your-repository-url]
-   cd [repository-name]
+   git clone git@github.com:kaldimitrov/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Install Dependencies**: Once inside the project directory, install the necessary dependencies:
